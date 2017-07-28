@@ -1,0 +1,370 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<jpa:entity-mappings xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:java="http://jcp.org/en/jsr/detail?id=270" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:jpa="http://java.sun.com/xml/ns/persistence/orm" v="2.6.3" sm="false" xs="false" id="_1476345695507203" xsi:schemaLocation="http://java.sun.com/xml/ns/persistence/orm orm_2_1.xsd">
+    <jpa:entity xre="false" compositePrimaryKeyClass="ItemPK" abs="false" class="Item" visibile="true" minimized="false" rootElement="_1476345695507203" id="_1476345695507204">
+        <jpa:ts e="true"/>
+        <jpa:hc e="true"/>
+        <jpa:eq e="true"/>
+        <jpa:attributes>
+            <jpa:basic optional="true" attribute-type="String" visibile="true" name="name" id="_1476345695511220">
+                <jpa:column name="Name" unique="false" nullable="true" insertable="true" updatable="true" table="item" length="255"/>
+            </jpa:basic>
+            <jpa:basic optional="true" attribute-type="String" visibile="true" name="type" id="_1476345695511221">
+                <jpa:column name="Type" unique="false" nullable="true" insertable="true" updatable="true" table="item" length="255"/>
+            </jpa:basic>
+            <jpa:basic optional="true" attribute-type="String" visibile="true" name="description" id="_1476345695511222">
+                <jpa:column name="Description" unique="false" nullable="true" insertable="true" updatable="true" table="item" length="255"/>
+            </jpa:basic>
+            <jpa:basic optional="true" attribute-type="Float" visibile="true" name="defMP" id="_1476345695511223">
+                <jpa:column name="DefMP" unique="false" nullable="true" insertable="true" updatable="true" table="item" precision="12"/>
+            </jpa:basic>
+            <jpa:basic optional="true" attribute-type="Float" visibile="true" name="defOTP" id="_1476345695511224">
+                <jpa:column name="DefOTP" unique="false" nullable="true" insertable="true" updatable="true" table="item" precision="12"/>
+            </jpa:basic>
+            <jpa:basic optional="true" attribute-type="String" visibile="true" name="modifiedDate" id="_1476345695511225">
+                <jpa:column name="ModifiedDate" unique="false" nullable="true" insertable="true" updatable="true" table="item" length="255"/>
+            </jpa:basic>
+            <jpa:id attribute-type="Integer" visibile="true" name="itemId" id="_1476345695511219">
+                <jpa:column name="ItemId" unique="false" nullable="false" insertable="true" updatable="true" table="item"/>
+            </jpa:id>
+        </jpa:attributes>
+        <jpa:table name="item"/>
+    </jpa:entity>
+    <jpa:entity xre="false" compositePrimaryKeyClass="StatisticscollectorPK" abs="false" class="Statisticscollector" visibile="true" minimized="false" rootElement="_1476345695507203" id="_1476345695511205">
+        <jpa:ts e="true"/>
+        <jpa:hc e="true"/>
+        <jpa:eq e="true"/>
+        <jpa:attributes>
+            <jpa:basic optional="true" attribute-type="String" visibile="true" name="statisticType" id="_1476345695511230">
+                <jpa:column name="StatisticType" unique="false" nullable="true" insertable="true" updatable="true" table="statisticscollector" length="255"/>
+            </jpa:basic>
+            <jpa:basic optional="true" attribute-type="String" visibile="true" name="statisticsInfo" id="_1476345695511231">
+                <jpa:column name="StatisticsInfo" unique="false" nullable="true" insertable="true" updatable="true" table="statisticscollector" length="255"/>
+            </jpa:basic>
+            <jpa:many-to-one optional="true" primaryKey="false" connected-entity-id="_1476345695511217" visibile="true" name="customer1" id="_147634925276036"/>
+            <jpa:id attribute-type="Integer" visibile="true" name="sCId" id="_1476345695511229">
+                <jpa:column name="SCId" unique="false" nullable="false" insertable="true" updatable="true" table="statisticscollector"/>
+            </jpa:id>
+        </jpa:attributes>
+        <jpa:table name="statisticscollector"/>
+    </jpa:entity>
+    <jpa:entity xre="false" compositePrimaryKeyClass="AddressPK" abs="false" class="Address" visibile="true" minimized="false" rootElement="_1476345695507203" id="_1476345695511206">
+        <jpa:attributes>
+            <jpa:basic optional="true" attribute-type="String" visibile="true" name="addressLine" id="_1476345695511234">
+                <jpa:column name="AddressLine" unique="false" nullable="true" insertable="true" updatable="true" table="address" length="255"/>
+            </jpa:basic>
+            <jpa:basic optional="true" attribute-type="String" visibile="true" name="city" id="_1476345695511235">
+                <jpa:column name="City" unique="false" nullable="true" insertable="true" updatable="true" table="address" length="255"/>
+            </jpa:basic>
+            <jpa:basic optional="true" attribute-type="String" visibile="true" name="country" id="_1476345695511236">
+                <jpa:column name="Country" unique="false" nullable="true" insertable="true" updatable="true" table="address" length="255"/>
+            </jpa:basic>
+            <jpa:basic optional="true" attribute-type="String" visibile="true" name="postalCode" id="_1476345695511237">
+                <jpa:column name="PostalCode" unique="false" nullable="true" insertable="true" updatable="true" table="address" length="255"/>
+            </jpa:basic>
+            <jpa:basic optional="true" attribute-type="String" visibile="true" name="modifiedDate" id="_1476345695511238">
+                <jpa:column name="ModifiedDate" unique="false" nullable="true" insertable="true" updatable="true" table="address" length="255"/>
+            </jpa:basic>
+            <jpa:id attribute-type="Integer" visibile="true" name="addressId" id="_1476345695511233">
+                <jpa:column name="AddressId" unique="false" nullable="false" insertable="true" updatable="true" table="address"/>
+            </jpa:id>
+        </jpa:attributes>
+        <jpa:table name="address"/>
+    </jpa:entity>
+    <jpa:entity xre="false" compositePrimaryKeyClass="RolePK" abs="false" class="Role" visibile="true" minimized="false" rootElement="_1476345695507203" id="_1476345695511207">
+        <jpa:ts e="true"/>
+        <jpa:hc e="true"/>
+        <jpa:eq e="true"/>
+        <jpa:attributes>
+            <jpa:basic optional="true" attribute-type="String" visibile="true" name="name" id="_1476345695511241">
+                <jpa:column name="Name" unique="false" nullable="true" insertable="true" updatable="true" table="role" length="255"/>
+            </jpa:basic>
+            <jpa:id attribute-type="Integer" visibile="true" name="roleId" id="_1476345695511240">
+                <jpa:column name="RoleId" unique="false" nullable="false" insertable="true" updatable="true" table="role"/>
+            </jpa:id>
+        </jpa:attributes>
+        <jpa:table name="role"/>
+    </jpa:entity>
+    <jpa:entity xre="false" compositePrimaryKeyClass="DiscountrulePK" abs="false" class="Discountrule" visibile="true" minimized="false" rootElement="_1476345695507203" id="_1476345695511208">
+        <jpa:attributes>
+            <jpa:basic optional="true" attribute-type="Float" visibile="true" name="discountValue" id="_1476345695511244">
+                <jpa:column name="DiscountValue" unique="false" nullable="true" insertable="true" updatable="true" table="discountrule" precision="12"/>
+            </jpa:basic>
+            <jpa:basic optional="true" attribute-type="Float" visibile="true" name="discountProcent" id="_1476345695511245">
+                <jpa:column name="DiscountProcent" unique="false" nullable="true" insertable="true" updatable="true" table="discountrule" precision="12"/>
+            </jpa:basic>
+            <jpa:id attribute-type="Integer" visibile="true" name="dRId" id="_1476345695511243">
+                <jpa:column name="DRId" unique="false" nullable="false" insertable="true" updatable="true" table="discountrule"/>
+            </jpa:id>
+        </jpa:attributes>
+        <jpa:table name="discountrule"/>
+    </jpa:entity>
+    <jpa:entity xre="false" compositePrimaryKeyClass="ItemdiscountPK" abs="false" class="Itemdiscount" visibile="true" minimized="false" rootElement="_1476345695507203" id="_1476345695511209">
+        <jpa:ts e="true"/>
+        <jpa:hc e="true"/>
+        <jpa:eq e="true"/>
+        <jpa:attributes>
+            <jpa:many-to-one primaryKey="false" connected-entity-id="_1476345695511208" visibile="true" name="discountrule1" id="_147634986845952"/>
+            <jpa:many-to-one primaryKey="false" connected-entity-id="_1476345695507204" visibile="true" name="item1" id="_147634987489653"/>
+            <jpa:id attribute-type="Integer" visibile="true" name="iDid" id="_1476345695511247">
+                <jpa:column name="IDid" unique="false" nullable="false" insertable="true" updatable="true" table="itemdiscount"/>
+            </jpa:id>
+        </jpa:attributes>
+        <jpa:table name="itemdiscount"/>
+    </jpa:entity>
+    <jpa:entity xre="false" compositePrimaryKeyClass="PaymentbillPK" abs="false" class="Paymentbill" visibile="true" minimized="false" rootElement="_1476345695507203" id="_1476345695511210">
+        <jpa:attributes>
+            <jpa:basic optional="true" attribute-type="Float" visibile="true" name="cmp" id="_1476345695511251">
+                <jpa:column name="CMP" unique="false" nullable="true" insertable="true" updatable="true" table="paymentbill" precision="12"/>
+            </jpa:basic>
+            <jpa:basic optional="true" attribute-type="Float" visibile="true" name="cotp" id="_1476345695511252">
+                <jpa:column name="COTP" unique="false" nullable="true" insertable="true" updatable="true" table="paymentbill" precision="12"/>
+            </jpa:basic>
+            <jpa:basic optional="true" attribute-type="Float" visibile="true" name="cMPDisc" id="_1476345695511253">
+                <jpa:column name="CMPDisc" unique="false" nullable="true" insertable="true" updatable="true" table="paymentbill" precision="12"/>
+            </jpa:basic>
+            <jpa:basic optional="true" attribute-type="Float" visibile="true" name="cOTPDisc" id="_1476345695511254">
+                <jpa:column name="COTPDisc" unique="false" nullable="true" insertable="true" updatable="true" table="paymentbill" precision="12"/>
+            </jpa:basic>
+            <jpa:id attribute-type="Integer" visibile="true" name="pBId" id="_1476345695511250">
+                <jpa:column name="PBId" unique="false" nullable="false" insertable="true" updatable="true" table="paymentbill"/>
+            </jpa:id>
+        </jpa:attributes>
+        <jpa:table name="paymentbill"/>
+    </jpa:entity>
+    <jpa:entity xre="false" compositePrimaryKeyClass="PaymentPK" abs="false" class="Payment" visibile="true" minimized="false" rootElement="_1476345695507203" id="_1476345695511211">
+        <jpa:ts e="true"/>
+        <jpa:hc e="true"/>
+        <jpa:eq e="true"/>
+        <jpa:attributes>
+            <jpa:basic optional="true" attribute-type="String" visibile="true" name="paymentInfo" id="_1476345695511257">
+                <jpa:column name="PaymentInfo" unique="false" nullable="true" insertable="true" updatable="true" table="payment" length="255"/>
+            </jpa:basic>
+            <jpa:many-to-one optional="true" primaryKey="false" connected-entity-id="_1476345695511216" visibile="true" name="paymenttype1" id="_147634961157542"/>
+            <jpa:many-to-one primaryKey="false" connected-entity-id="_1476345695511210" visibile="true" name="paymentbill1" id="_147634962893343"/>
+            <jpa:many-to-one primaryKey="false" connected-entity-id="_1476345695511213" visibile="true" name="so1" id="_147634967771345"/>
+            <jpa:id attribute-type="Integer" visibile="true" name="paymentId" id="_1476345695511256">
+                <jpa:column name="PaymentId" unique="false" nullable="false" insertable="true" updatable="true" table="payment"/>
+            </jpa:id>
+        </jpa:attributes>
+        <jpa:table name="payment"/>
+    </jpa:entity>
+    <jpa:entity xre="false" compositePrimaryKeyClass="ItemgroupPK" abs="false" class="Itemgroup" visibile="true" minimized="false" rootElement="_1476345695507203" id="_1476345695511212">
+        <jpa:ts e="true"/>
+        <jpa:hc e="true"/>
+        <jpa:eq e="true"/>
+        <jpa:attributes>
+            <jpa:many-to-one primaryKey="false" connected-entity-id="_1476345695511218" visibile="true" name="group11" id="_147634989950154"/>
+            <jpa:many-to-one primaryKey="false" connected-entity-id="_1476345695507204" visibile="true" name="item1" id="_147634990322055"/>
+            <jpa:id attribute-type="Integer" visibile="true" name="iGId" id="_1476345695511261">
+                <jpa:column name="IGId" unique="false" nullable="false" insertable="true" updatable="true" table="itemgroup"/>
+            </jpa:id>
+        </jpa:attributes>
+        <jpa:table name="itemgroup"/>
+    </jpa:entity>
+    <jpa:entity xre="false" compositePrimaryKeyClass="SoPK" abs="false" class="So" visibile="true" minimized="false" rootElement="_1476345695507203" id="_1476345695511213">
+        <jpa:ts e="true"/>
+        <jpa:hc e="true"/>
+        <jpa:eq e="true"/>
+        <jpa:attributes>
+            <jpa:basic optional="true" attribute-type="String" visibile="true" name="dateCreated" id="_1476345695511265">
+                <jpa:column name="DateCreated" unique="false" nullable="true" insertable="true" updatable="true" table="so" length="255"/>
+            </jpa:basic>
+            <jpa:basic optional="true" attribute-type="String" visibile="true" name="orderDate" id="_1476345695511266">
+                <jpa:column name="OrderDate" unique="false" nullable="true" insertable="true" updatable="true" table="so" length="255"/>
+            </jpa:basic>
+            <jpa:basic optional="true" attribute-type="String" visibile="true" name="status" id="_1476345695511267">
+                <jpa:column name="Status" unique="false" nullable="true" insertable="true" updatable="true" table="so" length="255"/>
+            </jpa:basic>
+            <jpa:basic optional="true" attribute-type="String" visibile="true" name="sONumber" id="_1476345695511268">
+                <jpa:column name="SONumber" unique="false" nullable="true" insertable="true" updatable="true" table="so" length="255"/>
+            </jpa:basic>
+            <jpa:basic optional="true" attribute-type="String" visibile="true" name="purchaseOrderNumber" id="_1476345695511269">
+                <jpa:column name="PurchaseOrderNumber" unique="false" nullable="true" insertable="true" updatable="true" table="so" length="255"/>
+            </jpa:basic>
+            <jpa:basic optional="true" attribute-type="String" visibile="true" name="dateModified" id="_1476345695511270">
+                <jpa:column name="DateModified" unique="false" nullable="true" insertable="true" updatable="true" table="so" length="255"/>
+            </jpa:basic>
+            <jpa:many-to-one primaryKey="false" connected-entity-id="_1476345695511217" visibile="true" name="customer1" id="_147634928072837"/>
+            <jpa:many-to-one primaryKey="false" connected-entity-id="_1476345695511215" visibile="true" name="user1" id="_147634948358238"/>
+            <jpa:id attribute-type="Integer" visibile="true" name="sOId" id="_1476345695511264">
+                <jpa:column name="SOId" unique="false" nullable="false" insertable="true" updatable="true" table="so"/>
+            </jpa:id>
+        </jpa:attributes>
+        <jpa:table name="so"/>
+    </jpa:entity>
+    <jpa:entity xre="false" compositePrimaryKeyClass="SoproductPK" abs="false" class="Soproduct" visibile="true" minimized="false" rootElement="_1476345695507203" id="_1476345695511214">
+        <jpa:ts e="true"/>
+        <jpa:hc e="true"/>
+        <jpa:eq e="true"/>
+        <jpa:attributes>
+            <jpa:basic optional="true" attribute-type="Float" visibile="true" name="mp" id="_1476345695511277">
+                <jpa:column name="MP" unique="false" nullable="true" insertable="true" updatable="true" table="soproduct" precision="12"/>
+            </jpa:basic>
+            <jpa:basic optional="true" attribute-type="Float" visibile="true" name="otp" id="_1476345695511278">
+                <jpa:column name="OTP" unique="false" nullable="true" insertable="true" updatable="true" table="soproduct" precision="12"/>
+            </jpa:basic>
+            <jpa:many-to-one primaryKey="false" connected-entity-id="_1476345695511213" visibile="true" name="so1" id="_147634974684646"/>
+            <jpa:id attribute-type="Integer" visibile="true" name="sOPId" id="_1476345695511276">
+                <jpa:column name="SOPId" unique="false" nullable="false" insertable="true" updatable="true" table="soproduct"/>
+            </jpa:id>
+        </jpa:attributes>
+        <jpa:table name="soproduct"/>
+    </jpa:entity>
+    <jpa:entity xre="false" compositePrimaryKeyClass="UserPK" abs="false" class="User" visibile="true" minimized="false" rootElement="_1476345695507203" id="_1476345695511215">
+        <jpa:attributes>
+            <jpa:basic optional="true" attribute-type="String" visibile="true" name="login" id="_1476345695511283">
+                <jpa:column name="Login" unique="false" nullable="true" insertable="true" updatable="true" table="user" length="255"/>
+            </jpa:basic>
+            <jpa:basic optional="true" attribute-type="String" visibile="true" name="password" id="_1476345695511284">
+                <jpa:column name="Password" unique="false" nullable="true" insertable="true" updatable="true" table="user" length="255"/>
+            </jpa:basic>
+            <jpa:id attribute-type="Integer" visibile="true" name="userId" id="_1476345695511282">
+                <jpa:column name="UserId" unique="false" nullable="false" insertable="true" updatable="true" table="user"/>
+            </jpa:id>
+        </jpa:attributes>
+        <jpa:table name="user"/>
+    </jpa:entity>
+    <jpa:entity xre="false" compositePrimaryKeyClass="PaymenttypePK" abs="false" class="Paymenttype" visibile="true" minimized="false" rootElement="_1476345695507203" id="_1476345695511216">
+        <jpa:attributes>
+            <jpa:basic optional="true" attribute-type="String" visibile="true" name="typeName" id="_1476345695511288">
+                <jpa:column name="TypeName" unique="false" nullable="true" insertable="true" updatable="true" table="paymenttype" length="255"/>
+            </jpa:basic>
+            <jpa:id attribute-type="Integer" visibile="true" name="pTId" id="_1476345695511287">
+                <jpa:column name="PTId" unique="false" nullable="false" insertable="true" updatable="true" table="paymenttype"/>
+            </jpa:id>
+        </jpa:attributes>
+        <jpa:table name="paymenttype"/>
+    </jpa:entity>
+    <jpa:entity xre="false" compositePrimaryKeyClass="CustomerPK" abs="false" class="Customer" visibile="true" minimized="false" rootElement="_1476345695507203" id="_1476345695511217">
+        <jpa:ts e="true"/>
+        <jpa:hc e="true"/>
+        <jpa:eq e="true"/>
+        <jpa:attributes>
+            <jpa:basic optional="true" attribute-type="String" visibile="true" name="firstName" id="_1476345695511291">
+                <jpa:column name="FirstName" unique="false" nullable="true" insertable="true" updatable="true" table="customer" length="255"/>
+            </jpa:basic>
+            <jpa:basic optional="true" attribute-type="String" visibile="true" name="lastName" id="_1476345695511292">
+                <jpa:column name="LastName" unique="false" nullable="true" insertable="true" updatable="true" table="customer" length="255"/>
+            </jpa:basic>
+            <jpa:basic optional="true" attribute-type="String" visibile="true" name="contact" id="_1476345695511293">
+                <jpa:column name="Contact" unique="false" nullable="true" insertable="true" updatable="true" table="customer" length="255"/>
+            </jpa:basic>
+            <jpa:basic optional="true" attribute-type="String" visibile="true" name="email" id="_1476345695511294">
+                <jpa:column name="Email" unique="false" nullable="true" insertable="true" updatable="true" table="customer" length="255"/>
+            </jpa:basic>
+            <jpa:basic optional="true" attribute-type="String" visibile="true" name="phone" id="_1476345695511295">
+                <jpa:column name="Phone" unique="false" nullable="true" insertable="true" updatable="true" table="customer" length="255"/>
+            </jpa:basic>
+            <jpa:many-to-one primaryKey="false" connected-entity-id="_1476345695511206" visibile="true" name="address1" id="_147634923745335"/>
+            <jpa:id attribute-type="Integer" visibile="true" name="customerId" id="_1476345695511290">
+                <jpa:column name="CustomerId" unique="false" nullable="false" insertable="true" updatable="true" table="customer"/>
+            </jpa:id>
+        </jpa:attributes>
+        <jpa:table name="customer"/>
+    </jpa:entity>
+    <jpa:entity xre="false" compositePrimaryKeyClass="Group1PK" abs="false" class="Group1" visibile="true" minimized="false" rootElement="_1476345695507203" id="_1476345695511218">
+        <jpa:ts e="true"/>
+        <jpa:hc e="true"/>
+        <jpa:eq e="true"/>
+        <jpa:attributes>
+            <jpa:basic optional="false" attribute-type="String" visibile="true" name="name" id="_1476345695511300">
+                <jpa:column name="Name" unique="false" nullable="false" insertable="true" updatable="true" table="group" length="255"/>
+            </jpa:basic>
+            <jpa:id attribute-type="Integer" visibile="true" name="groupId" id="_1476345695511299">
+                <jpa:column name="GroupId" unique="false" nullable="false" insertable="true" updatable="true" table="group"/>
+            </jpa:id>
+        </jpa:attributes>
+        <jpa:table name="group"/>
+    </jpa:entity>
+    <jpa:entity xre="false" compositePrimaryKeyClass="UserRolePK" abs="false" class="UserRole" visibile="true" minimized="false" rootElement="_1476345695507203" id="_1476349146526">
+        <jpa:ts e="true"/>
+        <jpa:hc e="true"/>
+        <jpa:eq e="true"/>
+        <jpa:attributes>
+            <jpa:many-to-one primaryKey="false" connected-entity-id="_1476345695511215" visibile="true" name="user" id="_147634916341833"/>
+            <jpa:many-to-one primaryKey="false" connected-entity-id="_1476345695511207" visibile="true" name="rrole11" id="_147634916947534"/>
+            <jpa:id attribute-type="Long" visibile="true" name="id" id="_147634914679431">
+                <jpa:generated-value strategy="AUTO"/>
+            </jpa:id>
+        </jpa:attributes>
+        <jpa:nq e="false" name="UserRole.findAll">
+            <jpa:query>Select e from UserRole e</jpa:query>
+        </jpa:nq>
+    </jpa:entity>
+    <jpa:entity xre="false" compositePrimaryKeyClass="ProductItemsPK" abs="false" class="ProductItems" visibile="true" minimized="false" rootElement="_1476345695507203" id="_1476349820251">
+        <jpa:ts e="true"/>
+        <jpa:hc e="true"/>
+        <jpa:eq e="true"/>
+        <jpa:attributes>
+            <jpa:many-to-one primaryKey="false" connected-entity-id="_1476345695511214" visibile="true" name="soproduct1" id="_147634983495450"/>
+            <jpa:many-to-one primaryKey="false" connected-entity-id="_1476345695507204" visibile="true" name="item1" id="_147634983950551"/>
+            <jpa:id attribute-type="Long" visibile="true" name="id" id="_147634982027248">
+                <jpa:generated-value strategy="AUTO"/>
+            </jpa:id>
+        </jpa:attributes>
+        <jpa:nq e="false" name="ProductItems.findAll">
+            <jpa:query>Select e from ProductItems e</jpa:query>
+        </jpa:nq>
+    </jpa:entity>
+    <jpa:snp e="true" loc="BEFORE_PACKAGE">/**
+ * This file was generated by the JPA Modeler
+ */</jpa:snp>
+    <jpa:c>
+        <db u="jdbc:mysql://localhost:3306/test?zeroDateTimeBehavior=convertToNull" n="root" p="root" d="com.mysql.jdbc.Driver"/>
+    </jpa:c>
+    <jpa:diagram>
+        <plane elementRef="_1476345695507203">
+            <shape elementRef="_1476345695507204">
+                <Bounds x="567.0" y="1271.0" width="128.0" height="197.0"/>
+            </shape>
+            <shape elementRef="_1476345695511205">
+                <Bounds x="32.0" y="32.0" width="200.0" height="147.0"/>
+            </shape>
+            <shape elementRef="_1476345695511206">
+                <Bounds x="32.0" y="559.0" width="144.0" height="176.0"/>
+            </shape>
+            <shape elementRef="_1476345695511207">
+                <Bounds x="1065.0" y="1245.0" width="128.0" height="92.0"/>
+            </shape>
+            <shape elementRef="_1476345695511208">
+                <Bounds x="1048.0" y="1705.0" width="168.0" height="113.0"/>
+            </shape>
+            <shape elementRef="_1476345695511209">
+                <Bounds x="814.0" y="1528.0" width="170.0" height="113.0"/>
+            </shape>
+            <shape elementRef="_1476345695511210">
+                <Bounds x="1048.0" y="559.0" width="162.0" height="155.0"/>
+            </shape>
+            <shape elementRef="_1476345695511211">
+                <Bounds x="814.0" y="243.0" width="146.0" height="168.0"/>
+            </shape>
+            <shape elementRef="_1476345695511212">
+                <Bounds x="296.0" y="1528.0" width="154.0" height="113.0"/>
+            </shape>
+            <shape elementRef="_1476345695511213">
+                <Bounds x="567.0" y="559.0" width="178.0" height="252.0"/>
+            </shape>
+            <shape elementRef="_1476345695511214">
+                <Bounds x="296.0" y="938.0" width="155.0" height="147.0"/>
+            </shape>
+            <shape elementRef="_1476345695511215">
+                <Bounds x="814.0" y="938.0" width="128.0" height="113.0"/>
+            </shape>
+            <shape elementRef="_1476345695511216">
+                <Bounds x="567.0" y="32.0" width="170.0" height="92.0"/>
+            </shape>
+            <shape elementRef="_1476345695511217">
+                <Bounds x="296.0" y="243.0" width="152.0" height="210.0"/>
+            </shape>
+            <shape elementRef="_1476345695511218">
+                <Bounds x="558.0" y="1705.0" width="137.0" height="92.0"/>
+            </shape>
+            <shape elementRef="_1476349146526">
+                <Bounds x="960.0" y="1085.0" width="148.0" height="113.0"/>
+            </shape>
+            <shape elementRef="_1476349820251">
+                <Bounds x="163.0" y="1144.0" width="173.0" height="113.0"/>
+            </shape>
+        </plane>
+    </jpa:diagram>
+</jpa:entity-mappings>

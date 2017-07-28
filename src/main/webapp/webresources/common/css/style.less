@@ -1,0 +1,497 @@
+/*============    ШРИФТЫ    ===========*/
+@font-face {
+    font-family: 'TANGODI';
+    src: url('fonts/TANGODI.eot');
+    src: url('fonts/TANGODI.eot') format('embedded-opentype'),
+         url('fonts/TANGODI.woff2') format('woff2'),
+         url('fonts/TANGODI.woff') format('woff'),
+         url('fonts/TANGODI.ttf') format('truetype'),
+         url('fonts/TANGODI.svg#TANGODI') format('svg');
+}
+
+@font-face {
+    font-family: 'CountryWesternBlack';
+    src: url('fonts/CountryWesternBlack.eot');
+    src: url('fonts/CountryWesternBlack.eot') format('embedded-opentype'),
+         url('fonts/CountryWesternBlack.woff2') format('woff2'),
+         url('fonts/CountryWesternBlack.woff') format('woff'),
+         url('fonts/CountryWesternBlack.ttf') format('truetype'),
+         url('fonts/CountryWesternBlack.svg#CountryWesternBlack') format('svg');
+}
+
+@font-face {
+    font-family: 'AGOR';
+    src: url('fonts/AGOR.eot');
+    src: url('fonts/AGOR.eot') format('embedded-opentype'),
+         url('fonts/AGOR.woff2') format('woff2'),
+         url('fonts/AGOR.woff') format('woff'),
+         url('fonts/AGOR.ttf') format('truetype'),
+         url('fonts/AGOR.svg#AGOR') format('svg');
+}
+
+.bold {
+	font-family: "TANGODI";
+}
+.med {
+	font-family: "CountryWesternBlack";
+}
+.light {
+	font-family: "AGOR";
+}
+
+/*===============    БАЗОВЫЕ НАСТРОЙКИ    ===============*/
+a:hover,
+a:focus,
+a:visited,
+a:active {
+	text-decoration: none;
+}
+.section_header h2 {
+	text-transform: uppercase;
+	color: #143d7f;
+	.med;
+}
+/*===============    ШАПКА    ===============*/
+header {
+	color: #143d7f;
+	padding-top: 25px;
+	padding-bottom: 20px;
+	.descript{
+		h4 {
+			.light;
+			text-transform: uppercase;
+		}
+		h5 {
+			.light;
+			font-size: 18px;
+
+		}
+	}
+	.phone_number {
+		text-align: right;
+		h3 {
+			margin-top: 7px;
+		}
+		a {
+			.med;
+			color: #143d7f;
+			&:hover {
+				text-decoration: none;
+			}
+			display: inline-block;
+			&:before {
+				vertical-align: middle;
+				margin-bottom: 5px;
+				margin-right: 5px;
+				content: '';
+				width: 22px;
+				height: 22px;
+				background: url(../img/phone_icon.png) no-repeat center center;
+				display: inline-block;
+			}
+		}
+	}
+}
+
+/*=================    Навигация    ==============*/
+nav {
+	background-color: #05204c;
+	ul.list-inline a {
+		display: inline-block;
+		text-transform: uppercase;
+		padding: 20px 45px;
+		color: #fff;
+		   -moz-transition: all 0.1s 0.02s ease;
+		   -o-transition: all 0.1s 0.02s ease;
+		   -webrit-transition: all 0.1s 0.02s ease;
+		&:hover {
+			text-decoration: none;
+			background-color: #385d99;
+		}
+	}
+	ul.list-inline {
+		margin-bottom: 0;
+	}
+}
+
+/*===================    ГЛАВНЫЙ ЭКРАН   ==============*/
+section#main {
+	background: url(../img/main_bg_1920.jpg) no-repeat center center;
+	background-size: cover;
+	.main_header {
+		h1 {
+			margin-top: 100px;
+			margin-bottom: 55px;
+			.bold;
+			color: #202321;
+			font-size: 55px;
+		}
+	}
+	h3 {
+		text-transform: uppercase;
+		.med;
+		font-size: 25px;
+		color: #090a26;
+		span {
+			color: #870117;
+		}
+	}
+	.main_buttons {
+		margin-top: 8px;
+		margin-bottom: 30px;
+		button#get_mes{
+			    border: none;
+				background-color: #0f1242;
+				padding: 10px 35px; 
+				color: #fff;
+				font-size: 20px;
+				.med;
+				text-transform: uppercase;
+				&:hover {
+					background-color: #060826;
+				}
+		}
+		button#get_types {
+				border: none;
+				background-color: #0f1242;
+				padding: 10px 35px; 
+				color: #fff;
+				font-size: 20px;
+				.med;
+				text-transform: uppercase;
+				margin-left: 15px;
+				&:hover {
+					background-color: #060826;
+				}
+		}
+	}
+}
+
+/*======================    УСЛУГИ    ==================*/
+section#types {
+	color: #143d7f;
+	padding-top: 50px;
+	.section_header {
+		margin-bottom: 50px;
+	}
+	h4 {
+		margin-top: 25px;
+		text-transform: uppercase;
+		.light;
+	}
+	button.more_btn {
+		border: none;
+		color: #0f1242;
+		border: 2px solid #0f1242;
+		padding: 10px 20px;
+		background-color: transparent;
+		text-transform: uppercase;
+		.light;
+		   -moz-transition: all 0.1s 0.02s ease;
+		   -o-transition: all 0.1s 0.02s ease;
+		   -webrit-transition: all 0.1s 0.02s ease;
+		&:hover {
+			background-color: #0f1242;
+			color: #fff;
+		}
+	}
+	button.offer_btn {
+		border: none;
+		color: #0f1242;
+		border: 2px solid #0f1242;
+		padding: 10px 28px;
+		background-color: #0f1242;
+		text-transform: uppercase;
+		color: #fff;
+		.light;
+		   -moz-transition: all 0.1s 0.02s ease;
+		   -o-transition: all 0.1s 0.02s ease;
+		   -webrit-transition: all 0.1s 0.02s ease;
+		&:hover {
+			background-color: transparent;
+			color: #0f1242;
+		}
+	}
+	.card {
+		   -moz-transition: all 0.1s 0.02s ease;
+		   -o-transition: all 0.1s 0.02s ease;
+		   -webrit-transition: all 0.1s 0.02s ease;
+		padding: 5px;
+		border: 2px solid transparent;
+		&:hover {
+			background-color: #fafdfa;
+			border: 2px solid #0f1242;
+		}
+	}
+}
+
+/*===================    КОНСУЛЬТАЦИЯ    =================*/
+section#help {
+	padding-top: 65px;
+	padding-bottom: 50px;
+	h3 {
+		color: #0f1242;
+		text-transform: uppercase;
+		.light;
+	}
+	p {
+		color: #0f1242;
+		.light;
+		font-size: 17px;
+	}
+	img {
+		margin-top: 18px;
+	}
+	button#free_consult {
+		.med;
+		text-transform: uppercase;
+		border: none;
+		background-color: transparent;
+		color: #0f1242;
+		border: 2px solid #0f1242;
+		padding:  15px 35px;
+		&:hover {
+			background-color: #0f1242;
+			color: #fff;
+		}
+	}
+}
+
+/*====================    	АКЦИИ    ======================*/
+section#offer {
+	padding-top: 70px;
+	h4 {
+		text-transform: uppercase;
+		color: #0f1242;
+		.med;
+	}
+	h3 {
+		color: #0f1242;
+		.light;
+	}
+	p {
+		.light;
+		color: #664ba0;
+		font-size: 17px;
+	}
+	input[name="name"] {
+		background: url(../img/name_input.png) no-repeat center left 5px;
+		padding: 10px;
+		padding-left: 30px;
+		border-radius: 0;
+		border: solid 1px #cccccc;
+		.light;
+		opacity: 0.5;
+		&:hover,
+		&:focus {
+			opacity: 1;
+		}
+
+
+	}
+	input[name="phone"] {
+		background: url(../img/phone_input.png) no-repeat center left 5px;
+		padding: 10px;
+		padding-left: 30px;
+		border-radius: 0;
+		border: solid 1px #cccccc;
+		.light;
+		opacity: 0.5;
+		&:hover,
+		&:focus {
+			opacity: 1;
+		}
+	}
+	button[type="submit"] {
+		background-color: #0f1242;
+		color: #fff;
+		border: 2px solid #0f1242;
+		padding: 14px 35px;
+		text-transform: uppercase;
+		width: 100%;
+		.light;
+		&:hover {
+			background-color: #cccccc;
+		}
+	}
+}
+
+/*=======================    ОТЗЫВЫ    =========================*/
+section#feedback{
+	padding-bottom: 50px;
+	.section_header {
+		margin-bottom: 50px;
+	}
+	.item {
+		background-color: #f2f7ff;
+		padding: 20px;
+		h5 {
+			margin-top: 25px;
+			.med;
+			color: #666666;
+			font-size: 20px;
+		}
+		a {
+			.med;
+			font-size: 18px;
+		}
+		p {
+			margin-top: 30px;
+		}
+	}
+	.carousel-indicators {
+		bottom: -50px;
+	}
+	.carousel-indicators .active {
+		background-color: #0f1242;
+	}
+	.carousel-indicators li {
+		border: solid 1px #0f1242;
+	}
+	.audio {
+		margin-top: 10px;
+		margin-left: 10px;
+	}
+}
+
+ /*====================    	ФУТЕР    =====================*/
+ footer {
+ 	margin-top: 20px;
+ 	padding-top: 50px;
+ 	padding-bottom: 10px;
+ 	background-color: #05204c;
+ 	color: #fff;
+ 	h2 {
+ 		.med;
+ 		text-transform: uppercase;
+ 		cilor: #fff;
+ 		h2 {
+ 			margin-left: -15px;
+ 		}
+
+ 	}
+ 	address {
+ 		margin-top: 10px;
+		p#address {
+			margin-bottom: 0;
+			text-transform: uppercase;
+			.light;
+			&:before {
+				content: '';
+				width: 15px;
+				height: 15px;
+				background: url(../img/map_marker.png) no-repeat center center;
+				display: inline-block;
+				vertical-align: middle;
+				margin-bottom: 3px;
+			}
+		}
+		p#minck {
+			font-size: 20px;
+			.light;
+			margin-top: 0;
+		}
+ 	}
+ 	p#phone_footer {
+ 		margin-bottom: 0;
+			text-transform: uppercase;
+			.light;
+			&:before {
+				content: '';
+				width: 15px;
+				height: 15px;
+				background: url(../img/phone_marker.png) no-repeat center center;
+				display: inline-block;
+				vertical-align: middle;
+				margin-bottom: 3px;
+			}
+ 	}
+ 	p#number {
+			font-size: 20px;
+			.light;
+			margin-top: 0;
+		}
+		.social {
+			margin-top: 20px;
+		}
+		.social_icon {
+			margin-right: 6px;
+			padding: 1px; 
+		}
+		button#get_answer {
+			text-transform: uppercase;
+			margin-left: 10px;
+			background-color: transparent;
+			padding: 7px 35px;
+			color: #fff;
+			border: 2px solid #fff;
+			.med;
+			&:hover {
+				background: #fff;
+				color: #666666;
+			}
+		}
+	.details_row {
+		margin-top: 30px;
+		h5 {
+			.med;
+			font-size: 20px;
+		}
+		p {
+			text-transform: uppercase;
+			.light;
+		}
+	}
+	.policy {
+		text-align: center;
+		a {
+			color: #fff;
+		}
+	}
+	.lk {
+		text-align: right;
+		h4 {
+			.light;
+			text-transform: uppercase;
+		}
+		a {
+			color: #4c913e;
+			.bold;
+			font-size: 19px;
+		}
+
+	}
+ }
+
+/*============    ШРИФТЫ    ===========*/
+
+/*============    ШРИФТЫ    ===========*/
+
+/*============    ПОДВАЛ    ===========*/
+
+/*============    	ВСПЛЫВАЮЩИЕ ОКНА    ===========*/
+
+/*============    	АДАПТИВ    ===========*/
+
+@media(min-width:0px) and (max-width:320px) {
+	
+}
+
+@media(min-width:321px) and (max-width:480px) {
+	
+}
+
+@media(min-width:481px) and (max-width:768px) {
+	
+}
+
+@media(min-width:769px) and (max-width:992px) {
+	
+}
+
+@media(min-width:993px) and (max-width:1200px) {
+	
+}
+
+
+
